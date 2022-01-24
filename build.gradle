@@ -26,9 +26,12 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "io.rest-assured:json-schema-validator:$restAssuredVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
+            "com.codeborne:selenide:5.24.0",
             "org.assertj:assertj-core:3.19.0",
             "org.junit.jupiter:junit-jupiter-api:$junitVersion")
-    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$junitVersion"
+    testRuntimeOnly(
+            "org.slf4j:slf4j-simple:1.7.29",
+            "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
 
 tasks.withType(JavaCompile) {
@@ -48,5 +51,11 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+
+task demowebshop(type: Test) {
+    useJUnitPlatform {
+        includeTags 'HW_19'
     }
 }
