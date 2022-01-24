@@ -18,7 +18,7 @@ import static gmail.salokin1991.filters.CustomLogFilter.customLogFilter;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static org.aspectj.weaver.WeaverMessages.format;
+import static java.lang.String.format;
 import static org.hamcrest.Matchers.*;
 
 import com.codeborne.selenide.Configuration;
