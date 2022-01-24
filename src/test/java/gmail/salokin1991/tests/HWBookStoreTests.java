@@ -29,10 +29,6 @@ import java.util.Map;
 
 public class HWBookStoreTests {
 
-    @BeforeAll
-    static void setUp() {
-    }
-
     public static CredentialConfig credentials =
             ConfigFactory.create(CredentialConfig.class);
 
@@ -41,7 +37,6 @@ public class HWBookStoreTests {
 
         RestAssured.baseURI = "http://demowebshop.tricentis.com";
         Configuration.baseUrl = "http://demowebshop.tricentis.com";
-
 
         String selenoidUrl = System.getProperty("url");
         String login = credentials.login();
