@@ -2,6 +2,7 @@ package gmail.salokin1991.tests;
 
 
 import io.qameta.allure.restassured.AllureRestAssured;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static gmail.salokin1991.filters.CustomLogFilter.customLogFilter;
@@ -10,6 +11,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.*;
 
+@Disabled
 public class BookStoreTests {
 
     @Test

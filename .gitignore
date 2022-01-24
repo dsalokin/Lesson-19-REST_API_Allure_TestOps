@@ -38,3 +38,4 @@ target/
 /gradlew
 /gradlew.bat
 *.properties
+/src/test/resources/config/
