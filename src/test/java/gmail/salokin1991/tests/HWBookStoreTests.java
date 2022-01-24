@@ -110,6 +110,7 @@ public class HWBookStoreTests {
 
     @Test
     @Tag("HW_19")
+    @Disabled
     void addToNewUserWishlistTest() {
         given()
                 .filter(new AllureRestAssured())
